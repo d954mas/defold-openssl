@@ -1,28 +1,6 @@
 name: "OpenSSL"
 
 platforms:
-    arm64-ios:
-        context:
-            frameworks: ["AdSupport", "SystemConfiguration"]
-            flags:      ["-stdlib=libc++", "-std=c++11"]
-            linkFlags:  ["-ObjC"]
-            libs:       ["z", "c++", "sqlite3"]
-
-    armv7-ios:
-        context:
-            frameworks: ["AdSupport", "SystemConfiguration"]
-            flags:      ["-stdlib=libc++", "-std=c++11"]
-            linkFlags:  ["-ObjC"]
-            libs:       ["z", "c++", "sqlite3"]
-
-    armv7-android:
-        context:
-            flags:      ["-std=c++11"]
-
-    arm64-android:
-        context:
-            flags:      ["-std=c++11"]
-
     x86-osx:
         context:
             frameworks: []
@@ -38,10 +16,6 @@ platforms:
             libs:       ["c++"]
 
     x86_64-linux:
-        context:
-            flags:      ["-std=c++11"]
-
-    js-web:
         context:
             flags:      ["-std=c++11"]
 
